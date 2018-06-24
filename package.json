@@ -1,0 +1,19 @@
+{
+  "name": "facetracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trevorlitsey/facetracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trevorlitsey/facetracker/issues"
+  },
+  "homepage": "https://github.com/trevorlitsey/facetracker#readme"
+}
