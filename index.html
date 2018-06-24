@@ -253,11 +253,18 @@
 							coords.forEach((coord, index) => {
 								velocities.push(((coord[0] - lastCoords[index][0]) + (coord[1] - lastCoords[index][1])) / 2);
 							})
+
+							const leftEye = velocities[27] < 0 ? -velocities[27] : velocities[27];
+							const rightEye = velocities[27] < 0 ? -velocities[27] : velocities[27];
+
 							if (output) {
-								output.playNote("C1", 1, { velocity: velocities[27] });
-								output.playNote("C1", 2, { velocity: velocities[32] });
+								output.playNote("C1", 1, { velocity: leftEye });
+								output.playNote("C1", 2, { velocity: rightEye });
 							}
-							console.log({ left: velocities[27], right: velocities[32] });
+							console.log({
+								leftEye,
+								rightEye
+							});
 
 						}
 
